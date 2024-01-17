@@ -13,7 +13,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://auth-t5a0.onrender.com",
-    methods: "GET",
+    methods: ["GET", "POST"],
     allowedHeaders: "Content-Type,Authorization",
   })
 );
